@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 import {Header} from './components/Header';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {Products} from './components/Products';
 import {ProductDetails} from './components/ProductDetails';
 import {Home} from './components/Home';

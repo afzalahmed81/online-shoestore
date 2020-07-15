@@ -38,7 +38,7 @@ export const ProductDetails = () => {
 
 
       const {productID} =useParams();
-      const product =shoes [productID];
+      const product =shoes[productID];
       const {name,img}=product;
     return (
         <div>
