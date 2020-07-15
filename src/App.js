@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import {Header} from './components/Header';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {Products} from './components/Products';
+import {ProductDetails} from './components/ProductDetails';
+import {Home} from './components/Home';
+import {NotFound} from './components/NotFound';
+import {ProductIndex} from './components/ProductIndex';
+import {AboutUs} from './components/AboutUs';
+import {Contact} from './components/Contact';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Header />
+        <Routes>
+          <Route path="Home" element={<Home />}>  </Route>
+          <Route path="products" element={<Products />}>  
+              <Route path="/" element={<ProductIndex />}>  </Route>
+              <Route path=":productID" element={<ProductDetails />} >  </Route>
+          </Route>
+          <Route path="AboutUs" element={<AboutUs />}> </Route>
+          <Route path="Contact" element={<Contact />}> </Route>
+          <Route path="*" element={<NotFound />} > </Route>
+        </Routes>
+    </Router>
   );
 }
 
