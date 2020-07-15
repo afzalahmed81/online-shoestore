@@ -48,7 +48,7 @@ export const ProductIndex= () => {
                         key={productID}>
                         <Link to={productID}>
                         <h2>{name}</h2>
-                        <img src={img} alt={name} />
+                        <img src={img} height={350} alt={name} />
                         </Link>
                     </li>
                 )}

@@ -6,7 +6,7 @@ export const Products= () => {
     
     return (
         <div>
-           <h4>  Products  </h4>
+           <h3>  Products  </h3>
             <Outlet />
              
         </div>

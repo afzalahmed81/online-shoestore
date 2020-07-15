@@ -43,7 +43,7 @@ export const ProductDetails = () => {
     return (
         <div>
             <h1> {name}   </h1>
-            <img src={img} alt={name} />
+            <img src={img} height={500} alt={name} />
         </div>
     )
 }
