@@ -50,10 +50,10 @@ body{
   
   
 }
-.productContainer > .link {
+.productContainer > .Link {
   text-align: center;
   width: 300px;
-  box-shadow: 0 0 10px #7884f1;
+  box-shadow: 0 0 10px #f13708;
   margin: 10px;
 }
 
